@@ -8,10 +8,12 @@ canvas,height = window.innerHeight;
 const worm = [
     makeDot("green"),
     makeDot("blue"),
-    makeDot("orange")
+    makeDot("orange"),
+    makeDot("purple"),
+    makeDot("red")
 ]
 
-let mouseHistory = [{clientX:100,clientY:100}, {clientX:100,clientY:100}, {clientX:100,clientY:100}]
+let mouseHistory = [{clientX:100,clientY:100}, {clientX:100,clientY:100}, {clientX:100,clientY:100}, {clientX:100,clientY:100}, {clientX:100,clientY:100}]
 let lastMouseEvent = {}
 let updateHistory = setInterval(() => {
   mouseHistory.push(lastMouseEvent)
