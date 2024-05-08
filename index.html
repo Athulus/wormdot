@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>WormDot</title>
+    <script src="index.js" defer></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        .left {
+            width: 90%;
+        }
+
+        .right {
+            width: 10%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="row">
+        <div class="column left">
+            <canvas id="myCanvas" width="1000" height="1000"></canvas>
+        </div>
+
+        <div class="column right">
+            <p>Select a background</p>
+            <input type="radio" id="boxes" name="bg" value="boxes">
+            <label for="boxes">Boxes</label><br>
+            <input type="radio" id="lines" name="bg" value="boxes">
+            <label for="lines">Lines</label><br>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .right {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Two Unequal Columns</h2>
+
+    <div class="row">
+        <div class="column left" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column right" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+        </div>
+    </div>
+
+</body>
+
+</html> -->
